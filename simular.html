@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/simular.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finveic</title>
+</head>
+<body>
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">FIN</span><span class="logo">VEIC</span>
+        </h1>
+    </div>
+
+    <nav class="fundo">
+        <div class="logotipo">
+            <a>
+                <img src="img/images/Logofinveic.png">
+            </a>
+        </div>
+
+        <div class="menu-icon" onclick="abrirMenu()">
+            <img src="img/images/menu.png" width="50px">
+        </div>
+
+        <ul>
+          <li><a href="tutorial.html">TUTORIAIS</a></li>
+          <li><a href="planos_logado.html">PLANOS</a></li>
+          <li><a href="suporte.html">SUPORTE</a></li>
+          <li><a href="multibancos.html">MULTIBANCOS</a></li>
+          <li><a href="perfil.html">PERFIL</a></li>
+          <li><a href="simular.html" class="simular">SIMULAR</a></li>
+        </ul>
+    </nav>
+    <br>
+
+
+
+
+      <div class="container">
+
+        <form id="form1" class="form" method="post" action="enviar.php">
+          <h2>INSIRA OS DADOS DO VEÍCULO</h2>
+
+
+          <div class="form-control">
+            <label for="tveiculo">Tipo de veículo</label>
+            <select class="form-control" id="tveiculo" name="tveiculo" required>
+              <option value="">Selecione o tipo de veículo</option>
+              <option value="carro">Carro</option>
+              <option value="moto">Moto</option>
+            </select>
+          </div>
+          
+          <div class="form-control">
+            <label for="marca">Marca do veículo</label>
+            <select class="form-control" id="marca" name="marca" >
+              <option value="">Selecione a marca do veículo</option>
+            </select>
+          </div>
+          
+          <div class="form-control">
+            <label for="modelo">Modelo do veículo</label>
+            <select class="form-control" id="modelo" name="modelo" >
+              <option value="">Selecione o modelo do veículo</option>
+            </select>
+          </div>
+          
+          <div class="form-control">
+            <label for="versao">Versão do veículo</label>
+            <select class="form-control" id="versao" name="versao" >
+              <option value="">Selecione a versão do veículo</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="anof">Ano de fabricação</label>
+            <select class="form-control" id="anof" name="anof" >
+              <option value="">Selecione o ano de fabricação</option>
+            </select>
+          </div>
+          
+          <div class="form-control">
+            <label for="anom">Ano do modelo</label>
+            <select class="form-control" id="anom" name="anom" >
+              <option value="">Selecione o ano do modelo</option>
+            </select>
+          </div>          
+
+          <div class="form-control">
+            <label for="valor">Valor do veículo</label>
+            <div>
+              <input type="text" placeholder="R$00,00" id="valor" required>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="valore">Valor da entrada</label>
+            <div>
+              <input type="text" placeholder="R$00,00" id="valore">
+            </div>
+          </div>
+<br>
+          <div>
+          <img src="/img/images/login.png" height="200" alt="Imagem do valor do veículo">
+          </div>
+
+            
+          <div class="button-group">
+            <button type="button" onclick="mostrarForm2()">Próximo</button>
+          </div>
+        </form>
+
+        <div class="container">
+            <form id="form2" class="form" method="post" action="enviar.php">
+                <h2>INSIRA OS DADOS DO CLIENTE</h2>
+                <div class="form-control">
+                <label for="nomecompleto">Nome Completo</label>
+                <input type="text" placeholder="Nome completo" name="nomecompleto" id="nomecompleto" required>
+              </div>
+              <div class="form-control">
+                <label for="nome">CPF</label>
+                <input type="text" placeholder="Digite o CPF" name="CPF" id="CPF" required>
+              </div>
+
+              <div class="form-control">
+                <label for="genero">Gênero</label>
+                <select class="form-control" id="genero" name="genero" required>
+                  <option value="">Gênero</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                </select>
+              </div>
+
+              <div class="form-control">
+                <label for="telefone">Telefone / Celular</label>
+                <input type="tel" placeholder="Digite o telefone" name="telefone" id="telefone" required>
+              </div>
+              <br>
+              <div>
+              <img src="/img/images/como_simular/cadastrar_cliente.png" height="200" alt="Imagem do valor do veículo">
+              </div>
+                
+              <div class="button-group">
+                <button type="button" onclick="mostrarForm1()">Voltar</button>
+                <button type="submit">Simular</button>
+              </div>
+            </form>
+          </div>
+      </div>
+
+
+
+
+      
+    <script src="js/simular.js"></script>
+</body>
+</html>

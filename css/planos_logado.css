@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header { 
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+.intro {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ff0606;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo {
+position: relative;
+display: inline-block;
+bottom: -20px;
+opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 105px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+body{
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+nav{
+  font-family: "Poppins", sans-serif;
+    padding: 13px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff; 
+}
+
+ul{
+    list-style: none;
+    line-height: 0;
+}
+
+
+nav .logotipo{
+    width: 160px;
+    transition: 0.5s;
+}
+
+nav .logotipo img{
+   width: 100%;
+}
+
+nav .logotipo:hover{
+  width: 170px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+  font-size: 22px;
+}
+
+nav ul li a:hover{
+    color: red;
+} 
+
+.menu-icon{
+    z-index: 8;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon img{
+    z-index: 8;
+    filter: invert(1);
+}
+@media (max-width:935px) {
+    .menu-icon{
+        display: block;
+        z-index:9;
+    }
+
+body{
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    }
+
+nav .logotipo{
+    z-index:8;
+    width: 150px;}
+
+nav ul{
+    z-index:8;
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in;
+    background-color: #ff0606;
+}
+
+nav ul.open{
+    transform: translateX(0);
+}
+
+nav li{
+    margin-top: 22px;
+}
+
+nav ul li a{
+    z-index:9;
+    font-family: "Poppins", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    margin: 10px 0;
+    color: #ffffff;
+}
+nav ul li a{
+    margin-top: 3px;
+    font-size: 1.6rem;
+}
+
+nav ul li a:hover{
+    color: black;
+    
+}
+
+}
+
+.fundo{
+  background-color: rgb(241, 241, 241);
+  
+}
+ 
+.simular{
+    padding: 7px;
+    background: #ff0606;
+    text-align: center;
+    color:#ffffff;
+    border-radius: 14px;
+    box-shadow: 3px 3px rgba(180, 180, 180, 0.2);
+    border: none;
+    outline: none;
+    transition: 0.8s;
+}
+
+.simular:hover{
+color: black;
+background: #ffffff;
+font-size: 24px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+  }
+  
+  section {
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    z-index: -1;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-intro {
+    padding-bottom: 40px;
+  }
+  
+  .section-intro h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .section-style {
+    width: 130px;
+    height: 12px;
+    margin: 20px auto 0;
+    position: relative;
+  }
+  
+  .section-style::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .section-style::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .pricing-table__wrapper {
+    position: relative;
+    padding-top: 300px;
+  }
+  
+  .pricing-cards {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 360px;
+    margin: 20px;
+    background-color: #faf9ff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px 5px rgba(33, 20, 106, 0.1);
+    transition: all 0.3s;
+  }
+
+  .card .card-pricing__header {
+    padding: 40px 10px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .card .card-pricing__header h4 {
+    margin-bottom: 5px;
+    color: #000000;;
+    font-size: 27px;
+    font-weight: 900;
+  }
+  
+  .card .card-pricing__header p {
+    margin-bottom: 27px;
+    color: #000000;;
+    font-size: 16px;
+  }
+  
+  .card-pricing__price {
+    font-size: 60px;
+  }
+  
+  .card-pricing__price span {
+    margin-right: 3px;
+    font-size: 40px;
+    position: relative;
+    bottom: 5px;
+    vertical-align: middle;
+  }
+  
+  .card-pricing__list {
+    padding: 30px 8px;
+    list-style: none;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .card-pricing__list li {
+    margin-bottom: 12px;
+    color: #000000;;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .card-pricing__footer {
+    padding: 45px 0;
+  }
+  
+  .card-pricing__footer .button {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #000000;;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #dbd9e6;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  /* Add hover effect on card elements */
+  
+  .card:hover {
+    background: #ececec;
+    box-shadow: 0 20px 25px 5px rgba(33, 20, 106, 0.1);
+  }
+  
+  .card:hover .card-pricing__header h4,
+  .card:hover .card-pricing__header p,
+  .card:hover .card-pricing__price {
+    color: #000000;
+  }
+  
+  .card:hover .card-pricing__footer .button {
+    color: #faf9ff;
+    background: rgb(255, 0, 0);
+  }
+  
+  /* Write the media query to make responsive */
+  
+  @media screen and (max-width: 1200px) {
+    .pricing-table__wrapper {
+      padding-top: 0px;
+    }
+  
+    .pricing-cards {
+      position: static;
+    }
+  }
